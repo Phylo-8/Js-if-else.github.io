@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Multiple value with 1 input 
+		</title>
+	</head>
+		
+	<body>
+		<input type="text" id="value" placeholder="Enter Value" style="padding:0.5%; font-size:15px;">
+			<br><br>
+		<button type="button" onclick="calc()">Submit</button>
+			<br><br>
+		<div id="ans1"></div>
+			<br><br>
+		<script>
+			
+			function calc()
+			{
+				var a = document.getElementById('value');
+				var b = a.value;
+				var c = document.getElementById('ans1');
+				var d = c.innerHTML;
+				if(a == "")
+				{
+					document.getElementById('ans1').innerHTML = a ;
+				}
+				else
+				{
+					document.getElementById('ans1').innerHTML = d += b + '<br>';
+					a.value = "";
+				}
+			}
+		</script>
+	</body>
+</html>     
